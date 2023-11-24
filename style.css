@@ -14,6 +14,8 @@ html {
   --background-color-footer-main: #2f303a;
   --background-color-mainteam: #f5f4fa;
   --button-backgroud-color: #188ce8;
+  --activ-soclink-color: #31D0AA;
+  --activ-soclink-color-team: #404BBF;
 }
 
 body {
@@ -419,12 +421,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
-  background-color: var(--background-color);
+  fill: var(--background-color);
+  background-color: var(--accent-color);
 }
 .subscribe-soc-link:hover,
 .subscribe-soc-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--activ-soclink-color-team);
   fill: var(--background-color);
 }
 
