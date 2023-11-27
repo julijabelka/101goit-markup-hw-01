@@ -11,7 +11,7 @@ html {
   --background-color: #ffffff;
   --headertext-color: #212121;
   --color-footer: rgba(255, 255, 255, 0.6);
-  --background-color-footer-main: #2f303a;
+  --background-color-footer-main: #2E2F42;
   --background-color-mainteam: #f5f4fa;
   --button-backgroud-color: #188ce8;
   --activ-soclink-color: #31D0AA;
@@ -81,15 +81,16 @@ ul {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  text-transform: uppercase;
 }
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -627,19 +628,31 @@ ul {
 }
 
 .logo-footer-link {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--background-color);
+  height: 24px;
+  text-transform: uppercase;
 }
 
 .logo-footer {
   color: var(--accent-color);
+}
+.footer-text {
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.32px;
+color: #F4F4FD;
+width: 264px;
 }
 .address-footer {
   font-style: normal;
@@ -699,7 +712,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 20px;
 }
@@ -721,11 +733,11 @@ ul {
   align-items: center;
   justify-content: center;
   fill: var(--background-color);
-  background: rgba(255, 255, 255, 0.1);
+  background-color: var(--accent-color);
 }
 .joing-link:hover,
 .joing-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--activ-soclink-color);
 }
 .joing-icon {
 }
