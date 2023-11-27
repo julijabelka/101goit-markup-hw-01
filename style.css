@@ -16,6 +16,7 @@ html {
   --button-backgroud-color: #188ce8;
   --activ-soclink-color: #31D0AA;
   --activ-soclink-color-team: #404BBF;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -111,6 +112,7 @@ ul {
 .header-item {
 }
 .header-link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -119,13 +121,27 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--headertext-color);
+  transition: color 250ms var(--timing-function);
 }
 .header-link:hover,
-.header-link:focus {
+.header-link:focus
+ {
   color: var(--accent-color);
 }
 .header-link.link.current {
   color: var(--accent-color);
+}
+.current::after {
+  position: absolute;
+  left: 0px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  bottom: -1px;
+  transition: 250ms var(--timing-function);
 }
 /*------contact list-------*/
 .header-address {
@@ -563,6 +579,32 @@ ul {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-item:hover .portfolio-thumb-text {
+  transform: translateY(0);
+}
+.portfolio-thumb-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 63px 24px;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+  overflow: auto;
+  width: 360px;
+
 }
 
 /*.portfolio-list .portfolio-item + .portfolio-item {
