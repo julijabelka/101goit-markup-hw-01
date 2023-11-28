@@ -131,7 +131,7 @@ ul {
 .header-link.link.current {
   color: var(--accent-color);
 }
-.current::after {
+.header-link:focus:after {
   position: absolute;
   left: 0px;
   content: " ";
