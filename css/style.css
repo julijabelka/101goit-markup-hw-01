@@ -15,7 +15,7 @@ html {
   --headertext-color: #212121;
   --color-footer: rgba(255, 255, 255, 0.6);
   --background-color-footer-main: #2E2F42;
-  --background-color-mainteam: #f5f4fa;
+  --background-color-mainteam: #F4F4FD;
   --button-backgroud-color: #188ce8;
   --activ-soclink-color: #31D0AA;
   --activ-soclink-color-team: #404BBF;
@@ -123,16 +123,17 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--headertext-color);
-  transition: 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 .header-link:hover,
 .header-link:focus
  {
   color: var(--accent-color);
-  transition: 250ms var(--timing-function);
+  
 }
 .header-link.link.current {
   color: var(--accent-color);
+  transition: 250ms var(--timing-function);
 }
 .header-link:focus::after {
   position: absolute;
@@ -144,7 +145,7 @@ ul {
   border-radius: 2px;
   background-color: var(--accent-color);
   bottom: -1px;
-  transition: 250ms var(--timing-function);
+  
 }
 /*------contact list-------*/
 .header-address {
@@ -177,6 +178,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-align: center;
+  transition: color 250ms var(--timing-function);
 }
 .header-mail {
   fill: var(--text-color);
@@ -185,12 +187,9 @@ ul {
 .header-mail:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition: 250ms var(--timing-function);
+  
 }
-.header-mail-icon {
-  display: flex;
-  margin-right: 10px;
-}
+
 /*.header-tel::before {
   display: inline-block;
   content: " ";
@@ -199,10 +198,7 @@ ul {
   margin-right: 10px;
   background-color: red;
 }*/
-.header-tel-icon {
-  margin-right: 10px;
-  display: flex;
-}
+
 .header-tel {
   display: flex;
   padding-top: 32px;
@@ -216,12 +212,13 @@ ul {
 
   align-content: center;
   align-items: flex-end;
+  transition: color 250ms var(--timing-function);
 }
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition: 250ms var(--timing-function);
+  
 }
 /*------Main section----*/
 .overlay {
@@ -270,13 +267,13 @@ ul {
   color: var(--background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+  transition: background-color 250ms var(--timing-function);
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--button-backgroud-color);
-  transition: 250ms var(--timing-function);
+  
 }
 /*------Section peculiarities-----*/
 
@@ -443,12 +440,13 @@ ul {
   justify-content: center;
   fill: var(--background-color);
   background-color: var(--accent-color);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 .subscribe-soc-link:hover,
 .subscribe-soc-link:focus {
   background-color: var(--activ-soclink-color-team);
   fill: var(--background-color);
-  transition: 250ms var(--timing-function);
+ 
 }
 
 .subscribe-soc-icon {
@@ -505,17 +503,17 @@ ul {
 }
 .portfolio-item:hover .portfolio-thumb-text {
   transform: translateY(0);
-  transition: 250ms var(--timing-function);
+  
 }
 .portfolio-thumb-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--background-color);
   padding: 63px 24px;
   position: absolute;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--accent-color);
   top: 0;
   left: 0;
   width: 100%;
@@ -613,7 +611,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
-color: #F4F4FD;
+color: var(--background-color-mainteam);
 width: 264px;
 }
 
@@ -651,11 +649,11 @@ width: 264px;
   justify-content: center;
   fill: var(--background-color);
   background-color: var(--accent-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .joing-link:hover,
 .joing-link:focus {
   background-color: var(--activ-soclink-color);
-  transition: 250ms var(--timing-function);
-}
+  }
 
 
