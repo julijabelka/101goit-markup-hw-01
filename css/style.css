@@ -328,16 +328,16 @@ ul {
   align-items: center;
 }
 .icon-antenna::before {
-  content: url("./images/antena.svg");
+  content: url("../images/antenag.svg");
 }
 .icon-clock::before {
-  content: url("./images/clock1.svg");
+  content: url("../images/clock1.svg");
 }
 .icon-diagrama::before {
-  content: url("./images/diagram1.svg");
+  content: url("../images/diagram1.svg");
 }
 .icon-astronaut::before {
-  content: url("./images/astronaut1.svg");
+  content: url("../images/astronaut1.svg");
 }
 
 .peculiarities-text {
